@@ -15,7 +15,7 @@
 
     <style class="silex-style"></style>
     <script type="text/javascript" class="silex-script"></script>
-    <style class="silex-inline-styles">.body-initial {background-color: rgba(255,255,255,1); position: static;}.silex-id-1668417249339-4 {width: 161px; min-height: 100px; background-color: transparent; position: absolute; top: 28.999999046325684px; left: 214.99999523162842px;}.silex-id-1668417257723-5 {width: 161px; min-height: 100px; background-color: transparent; position: absolute; top: 34px; left: 579px;}.silex-id-1668417258752-6 {width: 161px; min-height: 100px; background-color: transparent; position: absolute; top: 34.000046730041504px; left: 982.9999847412109px;}.silex-id-1668421109685-0 {width: 400px; min-height: 100px; background-color: transparent; position: absolute; top: 225px; left: 295.6000061035156px;}.silex-id-1668424506631-0 {width: 400px; min-height: 100px; background-color: transparent; position: absolute; top: 225px; left: 665px;}@media only screen and (max-width: 480px) {}</style>
+    <style class="silex-inline-styles">.body-initial {background-color: rgba(255,255,255,1); position: static;}.silex-id-1668417249339-4 {width: 161px; min-height: 100px; background-color: transparent; position: absolute; top: 28.999999046325684px; left: 214.99999523162842px;}.silex-id-1668417257723-5 {width: 161px; min-height: 100px; background-color: transparent; position: absolute; top: 34px; left: 579px;}.silex-id-1668417258752-6 {width: 161px; min-height: 100px; background-color: transparent; position: absolute; top: 34.000046730041504px; left: 982.9999847412109px;}.silex-id-1668421109685-0 {width: 829px; min-height: 100px; background-color: transparent; position: absolute; top: 89px; left: 78px;}.silex-id-1668424506631-0 {width: 400px; min-height: 100px; background-color: transparent; position: absolute; top: 225px; left: 665px;}.silex-id-1668425204159-0 {width: 400px; min-height: 400px; background-color: transparent; position: absolute; top: 300px; left: 265.0003967285156px;}.silex-id-1668425211718-1 {width: 400px; min-height: 400px; background-color: transparent; position: absolute; top: 300.3999938964844px; left: 856px;}@media only screen and (max-width: 480px) {}</style>
     <title></title>
     
 
@@ -145,37 +145,6 @@
   });
 
 </script>
-</div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1668421109685-0 page-page-1 paged-element silex-component-jobs" data-silex-id="silex-id-1668421109685-0" style=""><div class="silex-element-content"><h1>Jobs</h1>
-<div id="hello-react"></div>
-
-
-<style>.skillbar {position: relative; display: block; margin-bottom: 15px; width: 100%; background: #eee; height: 35px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -webkit-transition: 0.4s linear; -moz-transition: 0.4s linear; -ms-transition: 0.4s linear; -o-transition: 0.4s linear; transition: 0.4s linear; -webkit-transition-property: width, background-color; -moz-transition-property: width, background-color; -ms-transition-property: width, background-color; -o-transition-property: width, background-color; transition-property: width, background-color;}.skillbar-title {position: relative; float: left; width: 25%; font-weight: bold; font-size: 13px; color: #ffffff; background: #6adcfa; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}.skillbar-title span {display: block; text-align: center; background: rgba(0, 0, 0, 0.1); height: 35px; line-height: 35px; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}.skillbar-bar {float: left; height: 35px; width: 0px; border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0 3px 3px 0;}.skill-bar-percent {position: absolute; right: 10px; top: 0; font-size: 11px; height: 35px; line-height: 35px; color: rgba(0, 0, 0, 0.4);}</style>
-<script src="..\..\..\..\..\prodotype\components\app.js" defer="" type="text/javascript"></script>
-<script type="text/javascript">
-  var fillBarSize = $('.skillbar').width() * (1 - 25 / 100);
-  var doc = $(document);
-  doc.scroll(function() {
-    var skillbars = $('.skillbar');
-    // Start animation when the skillbars hit the middle of the screen
-    if (skillbars.offset().top <= (doc.scrollTop() + $(window).height()/2)) {
-      $('.skillbar').each(function(){
-        $(this).find('.skillbar-bar').delay(500).animate({
-          width: (fillBarSize * parseInt($(this).attr('data-percent')) / 100) + 'px'
-        },6000);
-      });
-    }
-  });
-
-  $.ajax({
-        type: "get",
-        url: "https://jsonplaceholder.typicode.com/albums",
-        data: "data",
-        success: function (response) {
-          console.log(response)
-        }
-  });
-
-</script>
 </div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1668424506631-0 page-page-1 paged-element silex-component-jobs" data-silex-id="silex-id-1668424506631-0" style=""><div class="silex-element-content"><h1>Jobs</h1>
 <div id="hello-react"></div>
 
@@ -207,4 +176,81 @@
   });
 
 </script>
+</div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1668421109685-0 page-page-1 paged-element silex-component-jobs" data-silex-id="silex-id-1668421109685-0" style=""><div class="silex-element-content"><h1>Jobs</h1>
+<div id="hello-react"></div>
+
+
+<style>.skillbar {position: relative; display: block; margin-bottom: 15px; width: 100%; background: #eee; height: 35px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -webkit-transition: 0.4s linear; -moz-transition: 0.4s linear; -ms-transition: 0.4s linear; -o-transition: 0.4s linear; transition: 0.4s linear; -webkit-transition-property: width, background-color; -moz-transition-property: width, background-color; -ms-transition-property: width, background-color; -o-transition-property: width, background-color; transition-property: width, background-color;}.skillbar-title {position: relative; float: left; width: 25%; font-weight: bold; font-size: 13px; color: #ffffff; background: #6adcfa; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}.skillbar-title span {display: block; text-align: center; background: rgba(0, 0, 0, 0.1); height: 35px; line-height: 35px; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}.skillbar-bar {float: left; height: 35px; width: 0px; border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0 3px 3px 0;}.skill-bar-percent {position: absolute; right: 10px; top: 0; font-size: 11px; height: 35px; line-height: 35px; color: rgba(0, 0, 0, 0.4);}</style>
+<script src="..\..\..\..\..\prodotype\components\app.js" defer="" type="text/javascript"></script>
+<script type="text/javascript">
+  var fillBarSize = $('.skillbar').width() * (1 - 25 / 100);
+  var doc = $(document);
+  doc.scroll(function() {
+    var skillbars = $('.skillbar');
+    // Start animation when the skillbars hit the middle of the screen
+    if (skillbars.offset().top <= (doc.scrollTop() + $(window).height()/2)) {
+      $('.skillbar').each(function(){
+        $(this).find('.skillbar-bar').delay(500).animate({
+          width: (fillBarSize * parseInt($(this).attr('data-percent')) / 100) + 'px'
+        },6000);
+      });
+    }
+  });
+
+  $.ajax({
+        type: "get",
+        url: "https://jsonplaceholder.typicode.com/albums",
+        data: "data",
+        success: function (response) {
+          console.log(response)
+        }
+  });
+
+</script>
+</div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1668425204159-0 page-page-1 paged-element silex-component-form silex-use-height-not-minheight silex-element-content-full-height" data-silex-id="silex-id-1668425204159-0" style=""><div class="silex-element-content"><form id="id_1668425204201_123" action="https://formspree.io/your@email.com" method="POST">
+  
+  <div>
+    <label for="field1">Name</label>
+    <input type="text" required="" id="field1" name="field1" placeholder="Your name">
+  </div>
+  
+  
+  <div>
+    <label for="field2">Your email adress</label>
+    <input type="text" required="" id="field2" name="field2" placeholder="your@email.com">
+  </div>
+  
+  
+  <div class="fill-vertical">
+    <label for="field3">Your message</label>
+    <textarea required="" id="field3" name="field3" placeholder="What you have to say"></textarea>
+  </div>
+  
+  <input type="submit" value="Send">
+</form>
+<style>#id_1668425204201_123 input[type=text], select {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;}#id_1668425204201_123 input[type=submit] {width: 100%; background-color: #4CAF50; color: #FFFFFF; padding: 14px 20px; margin: 8px 0; border: 1px solid #4CAF50; border-radius: 3px; cursor: pointer;}#id_1668425204201_123 label {color: #000000;}#id_1668425204201_123 .fill-vertical {flex: 1 1 auto; display: flex; flex-direction: column;}#id_1668425204201_123 .fill-vertical textarea {flex: 1 1 auto; width: 100%; height: 150px; padding: 12px 20px; box-sizing: border-box; border: 2px solid #ccc; border-radius: 3px; background-color: #f8f8f8; font-size: 16px; resize: none;}#id_1668425204201_123 {border-radius: 3px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;}</style>
+
+</div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1668425211718-1 page-page-1 paged-element silex-component-form silex-use-height-not-minheight silex-element-content-full-height" data-silex-id="silex-id-1668425211718-1" style=""><div class="silex-element-content"><form id="id_1668425211718_690" action="https://formspree.io/your@email.com" method="POST">
+  
+  <div>
+    <label for="field1">Name</label>
+    <input type="text" required="" id="field1" name="field1" placeholder="Your name">
+  </div>
+  
+  
+  <div>
+    <label for="field2">Your email adress</label>
+    <input type="text" required="" id="field2" name="field2" placeholder="your@email.com">
+  </div>
+  
+  
+  <div class="fill-vertical">
+    <label for="field3">Your message</label>
+    <textarea required="" id="field3" name="field3" placeholder="What you have to say"></textarea>
+  </div>
+  
+  <input type="submit" value="Send">
+</form>
+<style>#id_1668425211718_690 input[type=text], select {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;}#id_1668425211718_690 input[type=submit] {width: 100%; background-color: #4CAF50; color: #FFFFFF; padding: 14px 20px; margin: 8px 0; border: 1px solid #4CAF50; border-radius: 3px; cursor: pointer;}#id_1668425211718_690 label {color: #000000;}#id_1668425211718_690 .fill-vertical {flex: 1 1 auto; display: flex; flex-direction: column;}#id_1668425211718_690 .fill-vertical textarea {flex: 1 1 auto; width: 100%; height: 150px; padding: 12px 20px; box-sizing: border-box; border: 2px solid #ccc; border-radius: 3px; background-color: #f8f8f8; font-size: 16px; resize: none;}#id_1668425211718_690 {border-radius: 3px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;}</style>
+
 </div></div></body></html>
